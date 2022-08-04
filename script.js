@@ -3,7 +3,9 @@ let x = document.getElementById("x").innerHTML;
 let y = document.getElementById("y").innerHTML;
 console.log(x);
 
-function createProblem(operation) {
+function createProblem(operation, use) {
+    
+        
     console.log(operation);
     let nX= 1;
     let nY = 9;
@@ -28,6 +30,7 @@ function createProblem(operation) {
     nX= 1;
     nY = 9;
     
+   
 }
 
 function compareAnswer(op){
@@ -60,4 +63,8 @@ function sub(){
     let nY = document.getElementById("y").innerHTML;
     let result = Number(nX) - Number(nY);
     return(result);
+}
+document.onkeyup = function (event){
+    let tecla = Number(event.key);
+    document.getElementById('answer').value = tecla;
 }
