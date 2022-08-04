@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Joguinho Top</title>
+</head>
+<body>
+    <div class="fundo">
+        <div class="container">
+            <div class="main">
+                <h1>AJUDE O HOMEM ARANHA!</h1>
+                <p>O homem aranha precisa de ajuda para fazer as continhas, você pode ajudar o homem aranha ?</p>
+                <div class="div-text">
+                    <p class="text" id="x"></p>
+                </div>
+                <div class="div-btns">
+                    <button id="add" class="main-submit--btn"onclick="createProblem(id)">+</button>
+                    <button id="sub"  class="main-submit--btn"onclick="createProblem(id)">-</button>
+                </div>
+                <div class="div-text2">
+                    <p class="text" id="y"></p>
+                </div>
+                <input type="number" id="answer" class="main--input" placeholder="Escreva o resultado aqui">
+                <div class="div-btns2">
+                    <button id="btnAdd" class="main-submit--btn2" style="display: none;" onclick="compareAnswer('add')">Enviar</button>
+                    <button id="btnSub" class="main-submit--btn2" style="display: none;" onclick="compareAnswer('sub')">Enviar</button>
+                </div>
+                <div class="div-text">
+                    <p class="text-end" id="operationResult">A resposta esta...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+
+<script src="script.js"></script>
+</html>
