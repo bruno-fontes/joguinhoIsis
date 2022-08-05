@@ -35,27 +35,33 @@ body{
 h1, p{
     font-weight: bold;
 }
+.papagaio{
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 .container-op{
     margin: 0 auto;
+    margin-top: 3rem;
     display: flex;
-    width: 75%;
-    justify-content: space-between;
+    width: 70%;
+    border-radius: .5rem;
+    color:#ffffff;
+    justify-content: space-evenly;
     flex-direction: row;
     background-color: #4E8098;
 }
 .p-box{
     font-size: 20px;
     font-weight: bold;
-    border: 2px black solid;
-    color: #fff;
     width: 10%;
     width: 5rem;
     display: inline-block;
 }
 .input-box{
     margin:  0 auto;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 15rem;
 
 }
@@ -70,11 +76,18 @@ h1, p{
     font-weight:  bold;
     text-align: center;
 }
-.text{
-   
+
+.main--input:focus{
+    outline: none;
 }
+.main--input::-webkit-outer-spin-button,
+.main--input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .text-box{
-    background-color:#4E8098;
+    background-color:#A31621;
     color: #fff;
     width: 15rem;
     box-sizing: border-box;
