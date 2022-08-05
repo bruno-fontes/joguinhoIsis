@@ -1,122 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Work Sans', sans-serif;    ;
 }
 
 .fundo{
-    background-image: url("ahomemaranha2.gif");
-    background-size: 8%;
+    background-image: url("omiaranha.png");
+    background-size: 125%;
     width: 100%;
     height: 789px;
     margin: 0 auto;
     display: flex;
 }
 .fundo-trans{
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.45);
     width: 100%;
     margin: 0 auto;
 }
 .container{
-    background-color: rgb(255, 201, 201);
+    display: block;
+    box-sizing: border-box;
+    background-color: rgba(226, 226, 226, 0.9);
     width: 40%;
-    height: 500px;
     margin: 0 auto;
     margin-top: 100px;
-    border-radius: 50px;
+    border-radius: 5px;
     align-items: center;
     text-align: center;
+    padding: 30px;
 }
-h1{
+h1, p{
     font-weight: bold;
 }
-p{
-    font-weight: bold;
-}
-.main{
-    margin-top: 100px;
-}
-.title{
-    display: block;
-    margin-top: 100px;
-}
-.papagaio{
-     
-    display: block;
-    margin-top: 100px;
-}
-.main-submit--btn{
-    background-color: rgb(255, 0, 43);
-   height: 30px;
-   width: 30px;
-    border-radius: 3px;
-}
-.main-submit--btn2{
-    background-color: rgb(255, 0, 43);
-   height: 30px;
-   width: 60px;
-    border-radius: 3px;
-    font-weight: bold;
-    cursor: pointer;
+.container-op{
     margin: 0 auto;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #4E8098;
+}
+.p-box{
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px black solid;
+    color: #fff;
+    width: 10%;
+    width: 5rem;
+    display: inline-block;
+}
+.input-box{
+    margin:  0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+
 }
 .main--input{
     margin-top: 10px;
-    border-radius: 10px;
-   
-
-}
-.main-submit--btn2:hover{
-    background-color: pink;
-    border-color: rgb(255, 0, 43);
-    margin: 0 auto;
-}
-#answer{
-    width: 50%;
-    padding: 10px;
-    font-size: 20px;
-}
-.a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 30px;
-}
-.div-text{
-    width: 100%;
-}
-.div-text2{
-    width: 100%;
-    margin-top: 10px;
-}
-.div-btns{
-    margin-top: 10px;
-    
-}
-.operation-p{
-    font-size: 2rem;
-    font-weight: bold;
-}
-.div-btns2{
-    margin-top: 10px;
-    width: 100%;
-    
-    
+    border: none;
+    border-radius: .5rem;
+    background-color: #fff;
+    color: rgb(31, 31, 31);
+    padding: 15px;
+    font-size: 16px;
+    font-weight:  bold;
+    text-align: center;
 }
 .text{
-    font-size: 20px;
-    font-weight: bold;
-    background-color: rgb(255, 0, 43);
-    width: 10%;
-    margin: 0 auto;
-    border-radius: 10px;
    
 }
-.text-end{
-    background-color: rgb(255, 0, 43);
-    width: 150px;
+.text-box{
+    background-color:#4E8098;
+    color: #fff;
+    width: 15rem;
+    box-sizing: border-box;
     font-weight: bold;
-   padding: 10px;
-    border-radius: 10px;
+    padding: .1rem;
+    border-radius: .5rem;
     margin: 0 auto;
     margin-top: 10px;
     
