@@ -98,6 +98,17 @@ h1, p{
     margin: 0 auto;
     margin-top: 10px;
 }
+.text-box-green{
+    background-color:#4e985e;
+    color: #fff;
+    width: 15rem;
+    box-sizing: border-box;
+    font-weight: bold;
+    padding: .1rem;
+    border-radius: .5rem;
+    margin: 0 auto;
+    margin-top: 10px;
+}
 .text-box-red{
     background-color:#A31621;
     color: #fff;

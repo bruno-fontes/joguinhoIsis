@@ -42,15 +42,13 @@ function compareAnswer(){
     if(answer == result){
         operationResult.innerHTML = "CORRETA!";
         for(let i=0; i<10;i++){
-            if(i % 2 == 0){
-                document.getElementById('operationResult2').className = 'text-box-blue';
-            }else{
-                document.getElementById('operationResult2').className = 'text-box-red';
-            }
+                document.getElementById('operationResult2').className = 'text-box-green';
+
         }
         setTimeout(function(){ window. location. reload(); }, 3000);
         
     }else{
+        document.getElementById('operationResult2').className = 'text-box-red';
         operationResult.innerHTML = "ERRRRADA!";
         
         setTimeout(function(){ window. location. reload(); }, 3000);
