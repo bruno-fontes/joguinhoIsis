@@ -1,7 +1,11 @@
+function play() {
+    document.getElementById("musica").play();
+}
+play();
 let operationResult = document.getElementById("operationResult");
 let x = document.getElementById("x").innerHTML;
 let y = document.getElementById("y").innerHTML;
-console.log(x);
+
 var result;
 
 
@@ -22,7 +26,7 @@ function createProblem() {
             result = Number(nX) + Number(nY);
             document.getElementById("operationParagraph").innerHTML = "+";
             
-
+            
         }else{
             result = Number(nX) - Number(nY);
             document.getElementById("operationParagraph").innerHTML = "-";
@@ -32,22 +36,22 @@ function createProblem() {
     document.getElementById("y").innerHTML = nY;
     nX= 1;
     nY = 9;
-   
+    
 }
 
 function compareAnswer(){
     let answer = document.getElementById("answer").value;
-   
+    
     console.log(result, Number(answer));
     if(answer == result){
         operationResult.innerHTML = "CORRETA!";
-        for(let i=0; i<10;i++){
-                document.getElementById('operationResult2').className = 'text-box-green';
-
-        }
+        document.getElementById('operationResult2').className = 'text-box-green';
+        var audioCerto = new Audio('certo.wav');
+        audioCerto.play();
         setTimeout(function(){ window. location. reload(); }, 3000);
-        
     }else{
+        var audioErrado = new Audio('erro.wav');
+        audioErrado.play();
         document.getElementById('operationResult2').className = 'text-box-red';
         operationResult.innerHTML = "ERRRRADA!";
         
@@ -75,7 +79,7 @@ document.onkeyup = function (event){
     compareAnswer()
 }
 // document.addEventListener('keyup', function(e){
-//     if(e.keyCode == 13)
-//       window.location.reload();
-//   })
+    //     if(e.keyCode == 13)
+    //       window.location.reload();
+    //   })
 createProblem();
